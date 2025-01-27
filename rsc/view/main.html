@@ -1,0 +1,120 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="x.css">
+<script src="wakaview.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari data di tabel...">
+    </div>
+    <div class="container">
+        <div id="mainContent">
+            <h1>PLASTIK</h1>
+            <div class="table-container" id="tablePlastik">
+                <table id="dataTablePlastik" class="table-plastik">
+                    <thead>
+                        <tr>
+                            <th class="no-column" rowspan="3">NO</th>
+                            <th class="detail-barang" colspan="3">DETAIL BARANG</th>
+                            <th class="analisis-pasar" colspan="14">ANALISIS PASAR</th>
+                        </tr>
+                        <tr>
+                            <th class="jenis-barang" rowspan="2">UKURAN</th>
+                            <th class="kode" colspan="2">KODE</th>
+                            <th class="harga" colspan="8">HARGA</th>
+                            <th class="stok" colspan="2">STOK</th>
+                            <th class="tanggal" colspan="2">TANGGAL</th>
+                        </tr>
+                        <tr>
+                            <th class="kode-gudang">TOKO</th>
+                            <th class="kode-gudang">GUDANG</th>
+                            <th class="dus">DUS/BALL</th>
+                            <th class="pack">1 PACK</th>
+                            <th class="pcs">1 PCS</th>
+                            <th class="gram-1000">1000 GRAM</th>
+                            <th class="gram-500">500 GRAM</th>
+                            <th class="gram-250">250 GRAM</th>
+                            <th class="gram-100">100 GRAM</th>
+                            <th class="gram-50">50 GRAM</th>
+                            <th class="gudang">GUDANG</th>
+                            <th class="toko">TOKO</th>
+                            <th class="masuk">MASUK</th>
+                            <th class="keluar">KELUAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>   
+            <div class="button-group">
+                <button id="switchButtonKue" onclick="showContent('mainContentKue')"><i class="fas fa-cookie"></i></button>
+                <button onclick="downloadTable()"><i class="fas fa-download"></i></button>
+                <button onclick="triggerUpdateFile()"><i class="fas fa-upload"></i></button>
+                <input type="file" id="fileInput" style="display:none;" onchange="handleFileUpload(event)">
+            </div>
+        </div>
+        <div id="mainContentKue" style="display:none;">
+            <h1>KUE</h1>
+            <div class="table-container" id="tableKue">
+                <table id="dataTableKue" class="table-kue">
+                    <thead>
+                        <tr>
+                            <th class="no-column" rowspan="3">NO</th>
+                            <th class="detail-barang" colspan="3">DETAIL BARANG</th>
+                            <th class="analisis-pasar" colspan="15">ANALISIS PASAR</th>
+                        </tr>
+                        <tr>
+                            <th class="jenis-barang" rowspan="2">UKURAN</th>
+                            <th class="kode" colspan="2">KODE</th>
+                            <th class="harga" colspan="8">HARGA</th>
+                            <th class="stok" colspan="2">STOK</th>
+                            <th class="tanggal" colspan="3">TANGGAL</th>
+                        </tr>
+                        <tr>
+                            <th class="kode-gudang">TOKO</th>
+                            <th class="kode-gudang">GUDANG</th>
+                            <th class="dus">DUS/BALL</th>
+                            <th class="pack">1 PACK</th>
+                            <th class="pcs">1 PCS</th>
+                            <th class="gram-1000">1000 GRAM</th>
+                            <th class="gram-500">500 GRAM</th>
+                            <th class="gram-250">250 GRAM</th>
+                            <th class="gram-100">100 GRAM</th>
+                            <th class="gram-50">50 GRAM</th>
+                            <th class="gudang">GUDANG</th>
+                            <th class="toko">TOKO</th>
+                            <th class="expayer">EXPAYER</th>
+                            <th class="masuk">MASUK</th>
+                            <th class="keluar">KELUAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>   
+            <div class="button-group">
+                <button id="switchButtonPlastik" onclick="showContent('mainContent')"><i class="fas fa-shopping-bag"></i></button>
+                <button onclick="downloadTable()"><i class="fas fa-download"></i></button>
+                <button onclick="triggerUpdateFile()"><i class="fas fa-upload"></i></button>
+                <input type="file" id="fileInput" style="display:none;" onchange="handleFileUpload(event)">
+            </div>
+        </div>
+    </div>
+    <input type="file" id="fileInput" style="display:none;" />
+
+    <script>
+        function showContent(contentId) {
+            var plastikContent = document.getElementById('mainContent');
+            var kueContent = document.getElementById('mainContentKue');
+            if (contentId === 'mainContent') {
+                plastikContent.style.display = 'block';
+                kueContent.style.display = 'none';
+            } else {
+                plastikContent.style.display = 'none';
+                kueContent.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
