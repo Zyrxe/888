@@ -1,0 +1,141 @@
+body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, .search-container {
+            text-align: center;
+            color: black;
+        }
+        .search-container {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: transparent;
+        }
+        .search-container input {
+            padding: 20px;
+            width: 90%;
+            height: 60px;
+            border-radius: 30px;
+            border: 3px solid #444;
+            background:#01dfff;
+            box-shadow: 8px 8px 15px #44dede, -8px -8px 15px #58ffff;
+            transition: all 0.3s ease-in-out;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .search-container input:focus {
+            box-shadow: inset 8px 8px 15px #ffffff, inset -8px -8px 15px #ffffff, 
+                        8px 8px 15px #44dede, -8px -8px 15px #58ffff;
+            outline: none;
+            border: 3px solid #333;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: black;
+            background: white;
+            border: 2px solid black;
+        }
+        table th, table td {
+            border: 2px solid black;
+        }
+        table th {
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        table td {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        th, td {
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        th {
+            background: black;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .table-plastik th {
+            background: black;
+        }
+        .sub-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 500px;
+            padding: 15px 0;
+            color: black;
+            background: #f0f0f0;
+        }
+        td[contenteditable="true"] {
+            transition: background-color 0.3s ease;
+        }
+        td[contenteditable="true"]:focus {
+            background-color: #e0f7fa;
+            outline: none;
+        }
+        .changed {
+            background-color: #ffeb3b !important;
+        }
+        .save-button, .delete-button {
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .save-button:hover, .delete-button:hover {
+            transform: scale(1.2);
+        }
+        .date-input {
+            background: transparent;
+            border: none; 
+            font-size: inherit; 
+            padding: 0;
+            width: 100%;
+            color: black;
+        }  
+        .font-bold-block {
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .container {
+            margin-top: 123px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+            position: fixed;
+            bottom: 2px;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .button-group button {
+            font-size: 50px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: transform 0.3s ease;
+            color: #01dfff;
+        }
+        .button-group button:hover {
+            transform: scale(1.2);
+        }
