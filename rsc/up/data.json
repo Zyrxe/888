@@ -1,0 +1,46 @@
+{
+    "KueDB": {
+        "defaultData": [
+            { "category": "Tepung", "items": [] },
+            { "category": "Mesis", "items": [] },
+            { "category": "Selai", "items": [] },
+            { "category": "Susu", "items": [] },
+            { "category": "Gula", "items": [] },
+            { "category": "Agar", "items": [] },
+            { "category": "Puding", "items": [] },
+            { "category": "Nutrijel", "items": [] },
+            { "category": "Pewarna", "items": [] },
+            { "category": "Minuman", "items": [] },
+            { "category": "Margarine", "items": [] },
+            { "category": "Coklat bubuk", "items": [] },
+            { "category": "Chocolate chip", "items": [] },
+            { "category": "Bahan pengemulsi", "items": [] },
+            { "category": "Bahan pengembang", "items": [] }
+        ]
+    },
+    "PlastikDB": {
+        "defaultData": [
+            { "category": "PP Neo (0,3)", "items": [] },
+            { "category": "PP Neo (0,5)", "items": [] },
+            { "category": "PP STP (standing pouch)", "items": [] },
+            { "category": "PP Wayang", "items": [] },
+            { "category": "PP +", "items": [] },
+            { "category": "OPP", "items": [] },
+            { "category": "PE Tomat", "items": [] },
+            { "category": "PE Andalan", "items": [] },
+            { "category": "PE Klip", "items": [] },
+            { "category": "PE +", "items": [] },
+            { "category": "THINWALL", "items": [] },
+            { "category": "CUP", "items": [] },
+            { "category": "MIKA", "items": [] },
+            { "category": "PIRING", "items": [] },
+            { "category": "MANGKOK", "items": [] },
+            { "category": "FOAM", "items": [] },
+            { "category": "KERTAS", "items": [] },
+            { "category": "TISU", "items": [] },
+            { "category": "DUS", "items": [] },
+            { "category": "RICEBOWL", "items": [] },
+            { "category": "BUBBLE WRAP", "items": [] }
+        ]
+    }
+}
