@@ -1,6 +1,6 @@
 const KueDB = {
-    dbName: "yyyy",
-    storeName: "zzzz",
+    dbName: "xxxxxx",
+    storeName: "yyyyy",
     db: null,
     defaultData: [], 
 
@@ -130,8 +130,8 @@ const KueDB = {
 };
 
 const PlastikDB = {
-    dbName: "777",
-    storeName: "777",
+    dbName: "888888",
+    storeName: "88888",
     db: null,
     defaultData: [], // Empty defaultData
 
